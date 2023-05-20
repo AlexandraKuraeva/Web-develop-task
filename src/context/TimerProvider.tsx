@@ -1,7 +1,7 @@
 import { useEffect, useState, createContext } from 'react';
 export const TimerContext = createContext<TimerContextType>({
   seconds: 0,
-  formatTime: (time: number) => '',
+  formatTime: () => '',
 });
 type TimerContextType = {
   seconds: number;
