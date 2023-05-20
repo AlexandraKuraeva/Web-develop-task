@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Menu from '../Menu/menu';
+import Menu from '../Menu/Menu';
 import { RouteNames } from '../../routes';
 import { NavLink } from 'react-router-dom';
 import styles from './header.module.scss';

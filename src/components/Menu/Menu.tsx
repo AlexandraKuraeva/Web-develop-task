@@ -12,14 +12,14 @@ interface MenuItem {
 interface MenuProps {
   items: MenuItem[];
 }
-const Menu = ({ items }) => {
+const Menu: React.FC<MenuProps> = ({ items }) => {
   console.log('render menu');
 
   return (
     <ul className={styles.menu}>
-      {items.map((item,) => (
-        <li className='menu__item' key={item.title}>
-          <NavLink  to={item.route}>
+      {items.map((item: MenuItem) => (
+        <li className="menu__item" key={item.title}>
+          <NavLink to={item.route}>
             <span>
               <img src={item.icon} alt="навигация" />
             </span>{' '}
