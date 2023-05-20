@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { YMaps, Map } from '@pbe/react-yandex-maps';
+
 import all from '../All.module.scss';
 import styles from './Map.module.scss';
 import arrow from '../../assets/img/profile/arrow_up.svg';

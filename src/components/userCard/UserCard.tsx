@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styles from './UserCard.module.scss';
 import avatar from '../../assets/img/Avatar.jpg';
 import telega from '../../assets/img/telega.svg';

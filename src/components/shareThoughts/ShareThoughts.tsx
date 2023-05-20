@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './ShareThoughts.module.scss';
 import arrow from '../../assets/img/profile/arrow.svg';
 const ShareThoughts = () => {

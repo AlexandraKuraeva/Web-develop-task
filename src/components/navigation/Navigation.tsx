@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './Navigation.module.scss';
 import prof from '../../assets/img/profile/profile.svg';
 import balance from '../../assets/img/profile/balanse.svg';

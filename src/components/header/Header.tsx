@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Menu from '../Menu/Menu';
 import { RouteNames } from '../../routes';
-import { NavLink } from 'react-router-dom';
+
 import styles from './header.module.scss';
 import arrow from '../../assets/img/arrow.svg';
 import statistics from '../../assets/img/statistics.svg';
@@ -14,7 +14,7 @@ import list from '../../assets/img/list.svg';
 import friends from '../../assets/img/friends.svg';
 import photo from '../../assets/img/photo.svg';
 import set from '../../assets/img/set.svg';
-import ar from '../../assets/img/small ar.svg';
+
 
 interface MenuItem {
   title: string;
