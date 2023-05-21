@@ -6,15 +6,15 @@ const MyMap = () => {
   const [loading, setLoading] = useState(true);
  
 
-//   useEffect(() => {
-//     const timeout = setTimeout(() => {
-//       setLoading(false);
-//     }, 1000); // задержка в 1000 миллисекунд
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // задержка в 1000 миллисекунд
 
-//     return () => {
-//       clearTimeout(timeout);
-//     };
-//   }, []);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
   return (
     <div className={styles.map}>
       {loading ? (

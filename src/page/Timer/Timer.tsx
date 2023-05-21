@@ -1,4 +1,4 @@
-import  { useState,  useContext } from 'react';
+import { useState, useContext } from 'react';
 import { TimerContext } from '../../context/TimerProvider';
 import all from '../All.module.scss';
 import styles from './Timer.module.scss';
@@ -7,7 +7,7 @@ import revers from '../../assets/img/map/revers.svg';
 import close from '../../assets/img/map/close.svg';
 
 const Timer = () => {
-  const {seconds, formatTime} = useContext(TimerContext);
+  const { seconds, formatTime } = useContext(TimerContext);
   const [isOpen, setIsOpen] = useState<boolean>(true);
   const handlerClick = () => {
     console.log(isOpen);
@@ -17,7 +17,7 @@ const Timer = () => {
   return (
     <div className={all.content}>
       <div className={styles.top}>
-        <h3 className={styles.title}>Basic map</h3>
+        <h3 className={styles.title}>Timer</h3>
         <div className={styles.right}>
           <span className={isOpen ? styles.open : styles.img} onClick={() => handlerClick()}>
             <img src={arrow} alt="открыть" />
@@ -30,7 +30,7 @@ const Timer = () => {
           </span>
         </div>
       </div>
-      <div className={styles.timer}>{formatTime(seconds)}</div>
+      {isOpen && <div className={styles.timer}>{formatTime(seconds)}</div>}
     </div>
   );
 };

@@ -32,6 +32,10 @@
 .left {
 	display: flex;
 	align-items: center;
+	@media screen and (max-width:640px) {
+		margin-bottom: 15px;
+		
+	}
 	& p {
 		margin-left: 8px;
 	}
