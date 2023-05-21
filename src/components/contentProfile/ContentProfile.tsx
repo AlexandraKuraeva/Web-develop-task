@@ -37,6 +37,7 @@ const ContentProfile = () => {
     <ul className={styles.list}>
       {articles.map((article) => (
         <Article
+          key={article.id}
           id={article.id}
           title={article.title}
           img={article.img}
