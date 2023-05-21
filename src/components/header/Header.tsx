@@ -27,10 +27,10 @@ const Header: FC = () => {
     { title: 'Activity', icon: menu, route: RouteNames.PROFILE },
     { title: 'Map', icon: location, route: RouteNames.MAP },
     { title: 'Timer', icon: time, route: RouteNames.TIMER },
-    { title: 'Notes', icon: list, route: '/y' },
-    { title: 'Friends', icon: friends, route: '/y' },
-    { title: 'Photos', icon: photo, route: '/y' },
-    { title: '', icon: set, route: '/y' },
+    { title: 'Notes', icon: list, route: '/X' },
+    { title: 'Friends', icon: friends, route: '/X' },
+    { title: 'Photos', icon: photo, route: '/X' },
+    { title: '', icon: set, route: '/X' },
   ];
 
   return (

@@ -21,7 +21,7 @@ const formatTime = (time: number) => {
 };
 
 export const TimerProvider = ({ children }: { children: React.ReactNode }) => {
-  const [seconds, setSeconds] = useState(50);
+  const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {

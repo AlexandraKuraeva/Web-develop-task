@@ -24,6 +24,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	@media screen and (max-width:640px) {
+		flex-direction: column;
+		
+	}
 }
 .left {
 	display: flex;
@@ -37,6 +41,8 @@
 	grid-template: auto/repeat(3, 1fr);
 	align-items: center;
 	gap: 30px;
+	
+	
 }
 .item {
 	display: flex;
