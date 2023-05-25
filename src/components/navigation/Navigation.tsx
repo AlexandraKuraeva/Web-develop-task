@@ -9,6 +9,7 @@ import set from '../../assets/img/profile/set.svg';
 import arrow from '../../assets/img/profile/arrow.svg';
 
 const Navigation = () => {
+	
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handlerClick=()=>{
 	setIsOpen(!isOpen)

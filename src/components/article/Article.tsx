@@ -20,9 +20,10 @@ interface Article {
 }
 
 const Article: React.FC<Article> = ({ id, title, img, comments }) => {
-	
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  console.log(img);
 
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  
   const handlerClick = () => {
     setIsOpen(!isOpen);
   };
@@ -46,17 +47,17 @@ const Article: React.FC<Article> = ({ id, title, img, comments }) => {
         <div className={styles.item__content}>
           <img src={img} alt="контентное изображение" className={styles.item__img} />
           <ul className={styles.comments}>
-            {comments.map((comment) => (
-              <li key={comment.id} className={styles.comment}>
+            {comments.map(({ id, author, text, timestamp }) => (
+              <li key={id} className={styles.comment}>
                 <p className={styles.comment__author}>
                   <img src={comm} alt="комментарий" />
-                  <a href="#"> {comment.author} </a>
+                  <a href="#"> {author} </a>
                   commented:
                 </p>
                 <div className={styles.comment__inner}>
-                  <p className={styles.comment__text}>{comment.text}</p>
+                  <p className={styles.comment__text}>{text}</p>
                   <span>
-                    - {comment.author.split(' ')[0]},{comment.timestamp}{' '}
+                    - {author.split(' ')[0]},{timestamp}{' '}
                   </span>
                 </div>
                 <div className={styles.footer}>
