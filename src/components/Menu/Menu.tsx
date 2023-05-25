@@ -13,7 +13,7 @@ interface MenuProps {
   items: MenuItem[];
 }
 const Menu: React.FC<MenuProps> = ({ items }) => {
-  console.log('render menu');
+
 
   return (
     <ul className={styles.menu}>
