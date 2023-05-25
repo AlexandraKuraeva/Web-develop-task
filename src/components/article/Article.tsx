@@ -20,6 +20,7 @@ interface Article {
 }
 
 const Article: React.FC<Article> = ({ id, title, img, comments }) => {
+	
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const handlerClick = () => {

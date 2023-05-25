@@ -29,7 +29,12 @@ const ContentProfile = () => {
       title: 'Sunset Sunset Sunset',
       img: 'https://wallpapercrafter.com/sizes/1366x768/234244-quino-quinoal-mlaga-and-playa-dela-misericordium-h.jpg',
       comments: [
-        { id: 0, author: 'Anna Root', text: 'lervrververvevrerbreerbreb', timestamp: '20:30 am' },
+        {
+          id: 0,
+          author: 'Anna Root',
+          text: 'Touch the sun, and immerse in the sea. Keep love in your heart.',
+          timestamp: '20:30 am',
+        },
       ],
     },
   ];
