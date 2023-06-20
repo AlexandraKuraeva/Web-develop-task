@@ -8,18 +8,16 @@ import close from '../../assets/img/map/close.svg';
 
 const Timer = () => {
   const { seconds, formatTime } = useContext(TimerContext);
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState(true);
   const handlerClick = () => {
-    console.log(isOpen);
     setIsOpen(!isOpen);
   };
-
   return (
     <div className={all.content}>
       <div className={styles.top}>
         <h3 className={styles.title}>Timer</h3>
         <div className={styles.right}>
-          <span className={isOpen ? styles.open : styles.img} onClick={() => handlerClick()}>
+          <span className={isOpen ? styles.open : styles.img} onClick={handlerClick}>
             <img src={arrow} alt="открыть" />
           </span>
           <span>

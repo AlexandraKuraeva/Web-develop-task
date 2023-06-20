@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Menu from '../Menu/Menu';
+import Menu from '../menu/Menu';
 import { RouteNames } from '../../routes';
 
 import styles from './header.module.scss';

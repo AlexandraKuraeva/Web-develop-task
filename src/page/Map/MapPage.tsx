@@ -1,18 +1,18 @@
 import { useState } from 'react';
-
 import all from '../All.module.scss';
 import styles from './Map.module.scss';
 import arrow from '../../assets/img/profile/arrow_up.svg';
 import revers from '../../assets/img/map/revers.svg';
 import close from '../../assets/img/map/close.svg';
 import MyMap from '../../components/map/Map';
+
 const MapPage = () => {
   const [isOpen, setIsOpen] = useState<boolean>(true);
 
   const handlerClick = () => {
-    console.log(isOpen);
     setIsOpen(!isOpen);
   };
+  
   return (
     <div className={all.content}>
       <div className={styles.top}>

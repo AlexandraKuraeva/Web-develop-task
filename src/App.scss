@@ -1,5 +1,6 @@
 @import "./styles/reset.css";
 @import "./styles/variables.scss";
+
 body {
 	font-family: $font-roboto;
 	font-size: 14px;
@@ -7,6 +8,7 @@ body {
 	font-weight: 400;
 	background-color: $color-bg;
 }
+
 a {
 	color: $color-black;
 }

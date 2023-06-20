@@ -17,9 +17,10 @@ const ShareThoughts = () => {
       <div className={styles.wrapper}>
         {isOpen && (
           <div className={styles.content}>
-				
-            <textarea className={styles.input}  placeholder="Enter your message..." />
-            <button  type='submit' className={styles.button} >Save</button>
+            <textarea className={styles.input} placeholder="Enter your message..." />
+            <button type="submit" className={styles.button}>
+              Save
+            </button>
           </div>
         )}
       </div>

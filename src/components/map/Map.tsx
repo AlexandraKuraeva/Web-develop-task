@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { Map, Placemark } from '@pbe/react-yandex-maps';
 import styles from '../../page/Map/Map.module.scss';
 import Loader from '../loader/Loader';
+
 const MyMap = () => {
   const [loading, setLoading] = useState(true);
- 
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -15,10 +15,11 @@ const MyMap = () => {
       clearTimeout(timeout);
     };
   }, []);
+
   return (
     <div className={styles.map}>
       {loading ? (
-        <Loader/>
+        <Loader />
       ) : (
         <Map
           defaultState={{
